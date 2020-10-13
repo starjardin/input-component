@@ -1,0 +1,17 @@
+/* variables */
+/*general rules for the inputs*/
+input {
+  display: block;
+  margin-block: 1rem;
+  padding: 1rem;
+  border: 1px solid #828282;
+  border-radius: 8px;
+}
+
+/*layouts of the inputs*/
+.container {
+  display: flex;
+  justify-content: safe;
+}
+
+/*# sourceMappingURL=/script.75da7f30.css.map */

@@ -1,0 +1,23 @@
+/* variables */
+
+$outline-error : #D32F2F;
+$outline-focus : #2962FF;
+$border_radius : 8px;
+$default_boder : 1px solid #828282;
+$base_padding : #F2F2F2;
+$disabled_bg : #F2F2F2;
+
+/*general rules for the inputs*/
+input {
+  display: block;
+  margin-block: 1rem;
+  padding: 1rem;
+  border: $default_boder;
+  border-radius: $border_radius;
+}
+
+/*layouts of the inputs*/
+.container  {
+  display: flex;
+  justify-content: safe;
+}
