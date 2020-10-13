@@ -6,38 +6,77 @@ export default function App () {
   return (
     <div>
       <div className="container">
-        <Input />
-        <Input />
-        <Input />
+        <Input 
+          label="Label"
+          iconStart="at-symbol"
+        />
+        <Input 
+          label="Label"
+          iconStart="search"
+        />
+        <Input 
+          label="Label"
+          iconStart="server"
+        />
       </div>
       <div className="container">
-        <Input />
-        <Input />
-        <Input />
+        <Input 
+          error
+          label="Label"
+        />
+        <Input 
+          error
+          label="Label"
+        />
+        <Input 
+          error
+          label="Label"
+        />
+      </div>
+      <div className="container">
+        <Input disabled/>
+      </div>
+      <div className="container">
+        {`< input helperText="some interesting text" text="error" />`}
+        <Input 
+          label="Label"
+          helperText="some interesting text"
+          text="text"
+        />
+        {`< input helperText="some interesting text" text="error" />`}
+        <Input 
+          label="Label"
+          helperText="some interesting text"
+          error
+          text="error"
+        />
+      </div>
+      <div className="container">
+        <Input 
+        />
+        <Input 
+        />
+      </div>
+      <div className="container">
+        {`< input value="text" />`}
+        <Input 
+          value="Text"
+          label="Label"
+        />
       </div>
       <div className="container">
         <Input/>
-      </div>
-      <div className="container">
-        <Input />
-        <Input />
-      </div>
-      <div className="container">
-        <Input />
-        <Input />
-      </div>
-      <div className="container">
         <Input/>
       </div>
       <div className="container">
-        <Input/>
-        <Input/>
+        {`< input fullwidth />`}
+        <Input 
+          label="label"
+          fullwidth="fullwidth"
+        />
       </div>
       <div className="container">
-        <Input/>
-      </div>
-      <div className="container">
-        <Input />
+        <Input multiline row="4"/>
       </div>
     </div>
   )

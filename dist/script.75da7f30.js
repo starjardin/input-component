@@ -28285,67 +28285,113 @@ if ("development" === 'production') {
 } else {
   module.exports = require('./cjs/react-dom.development.js');
 }
-},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"Input.js":[function(require,module,exports) {
+},{"./cjs/react-dom.development.js":"node_modules/react-dom/cjs/react-dom.development.js"}],"icons/AtSymbol.svg":[function(require,module,exports) {
+module.exports = "/AtSymbol.25d8a591.svg";
+},{}],"icons/Cog.svg":[function(require,module,exports) {
+module.exports = "/Cog.f4f95a0d.svg";
+},{}],"icons/Search.svg":[function(require,module,exports) {
+module.exports = "/Search.242e4ae0.svg";
+},{}],"icons/Selector.svg":[function(require,module,exports) {
+module.exports = "/Selector.e3d5fa16.svg";
+},{}],"icons/Server.svg":[function(require,module,exports) {
+module.exports = "/Server.3e17ad7e.svg";
+},{}],"Icons.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = exports.Input = void 0;
+exports.default = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
+
+var _AtSymbol = _interopRequireDefault(require("./icons/AtSymbol.svg"));
+
+var _Cog = _interopRequireDefault(require("./icons/Cog.svg"));
+
+var _Search = _interopRequireDefault(require("./icons/Search.svg"));
+
+var _Selector = _interopRequireDefault(require("./icons/Selector.svg"));
+
+var _Server = _interopRequireDefault(require("./icons/Server.svg"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
 
-function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+function Icons(props) {
+  var icon;
 
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+  switch (props.name) {
+    case "AtSymbol":
+      icon = /*#__PURE__*/_react.default.createElement("img", {
+        src: _AtSymbol.default
+      });
+      break;
 
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-var Input = /*#__PURE__*/function (_Component) {
-  _inherits(Input, _Component);
-
-  var _super = _createSuper(Input);
-
-  function Input() {
-    _classCallCheck(this, Input);
-
-    return _super.apply(this, arguments);
+    default:
+      icon = "";
   }
 
-  _createClass(Input, [{
-    key: "render",
-    value: function render() {
-      return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("input", null));
-    }
-  }]);
+  return icon;
+}
 
-  return Input;
-}(_react.Component);
+var _default = Icons;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","./icons/AtSymbol.svg":"icons/AtSymbol.svg","./icons/Cog.svg":"icons/Cog.svg","./icons/Search.svg":"icons/Search.svg","./icons/Selector.svg":"icons/Selector.svg","./icons/Server.svg":"icons/Server.svg"}],"Input.js":[function(require,module,exports) {
+"use strict";
 
-exports.Input = Input;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _Icons = _interopRequireDefault(require("./Icons.js"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _getRequireWildcardCache() { if (typeof WeakMap !== "function") return null; var cache = new WeakMap(); _getRequireWildcardCache = function () { return cache; }; return cache; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } if (obj === null || typeof obj !== "object" && typeof obj !== "function") { return { default: obj }; } var cache = _getRequireWildcardCache(); if (cache && cache.has(obj)) { return cache.get(obj); } var newObj = {}; var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null; if (desc && (desc.get || desc.set)) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } newObj.default = obj; if (cache) { cache.set(obj, newObj); } return newObj; }
+
+function Input(props) {
+  var classes;
+  var placeholder;
+
+  if (props.error) {
+    classes = "".concat(classes, " error");
+  }
+
+  if (props.fullwidth) {
+    classes = "".concat(classes, " ").concat(props.fullwidth);
+  }
+
+  if (props.multiline) {
+    classes = "".concat(classes, " multiline row4");
+  }
+
+  placeholder = props.value ? props.value : "Placeholder", placeholder = props.fullwidth ? "Text" : placeholder;
+  return /*#__PURE__*/_react.default.createElement("div", {
+    className: "wrapper"
+  }, /*#__PURE__*/_react.default.createElement("span", {
+    className: props.text && props.text
+  }, props.helperText && props.helperText), /*#__PURE__*/_react.default.createElement("input", {
+    type: "text",
+    className: classes,
+    placeholder: placeholder,
+    disabled: props.disabled
+  }), /*#__PURE__*/_react.default.createElement("label", {
+    htmlFor: props.label
+  }, props.label));
+}
+
 var _default = Input;
 exports.default = _default;
-},{"react":"node_modules/react/index.js"}],"../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/bundle-url.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./Icons.js":"Icons.js"}],"../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -28440,23 +28486,61 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 function App() {
   return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
-  }, /*#__PURE__*/_react.default.createElement(_Input.default, null), /*#__PURE__*/_react.default.createElement(_Input.default, null), /*#__PURE__*/_react.default.createElement(_Input.default, null)), /*#__PURE__*/_react.default.createElement("div", {
+  }, /*#__PURE__*/_react.default.createElement(_Input.default, {
+    label: "Label",
+    iconStart: "at-symbol"
+  }), /*#__PURE__*/_react.default.createElement(_Input.default, {
+    label: "Label",
+    iconStart: "search"
+  }), /*#__PURE__*/_react.default.createElement(_Input.default, {
+    label: "Label",
+    iconStart: "server"
+  })), /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
-  }, /*#__PURE__*/_react.default.createElement(_Input.default, null), /*#__PURE__*/_react.default.createElement(_Input.default, null), /*#__PURE__*/_react.default.createElement(_Input.default, null)), /*#__PURE__*/_react.default.createElement("div", {
+  }, /*#__PURE__*/_react.default.createElement(_Input.default, {
+    error: true,
+    label: "Label"
+  }), /*#__PURE__*/_react.default.createElement(_Input.default, {
+    error: true,
+    label: "Label"
+  }), /*#__PURE__*/_react.default.createElement(_Input.default, {
+    error: true,
+    label: "Label"
+  })), /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
-  }, /*#__PURE__*/_react.default.createElement(_Input.default, null)), /*#__PURE__*/_react.default.createElement("div", {
+  }, /*#__PURE__*/_react.default.createElement(_Input.default, {
+    disabled: true
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container"
+  }, "< input helperText=\"some interesting text\" text=\"error\" />", /*#__PURE__*/_react.default.createElement(_Input.default, {
+    label: "Label",
+    helperText: "some interesting text",
+    text: "text"
+  }), "< input helperText=\"some interesting text\" text=\"error\" />", /*#__PURE__*/_react.default.createElement(_Input.default, {
+    label: "Label",
+    helperText: "some interesting text",
+    error: true,
+    text: "error"
+  })), /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
   }, /*#__PURE__*/_react.default.createElement(_Input.default, null), /*#__PURE__*/_react.default.createElement(_Input.default, null)), /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
+  }, "< input value=\"text\" />", /*#__PURE__*/_react.default.createElement(_Input.default, {
+    value: "Text",
+    label: "Label"
+  })), /*#__PURE__*/_react.default.createElement("div", {
+    className: "container"
   }, /*#__PURE__*/_react.default.createElement(_Input.default, null), /*#__PURE__*/_react.default.createElement(_Input.default, null)), /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
-  }, /*#__PURE__*/_react.default.createElement(_Input.default, null)), /*#__PURE__*/_react.default.createElement("div", {
+  }, "< input fullwidth />", /*#__PURE__*/_react.default.createElement(_Input.default, {
+    label: "label",
+    fullwidth: "fullwidth"
+  })), /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
-  }, /*#__PURE__*/_react.default.createElement(_Input.default, null), /*#__PURE__*/_react.default.createElement(_Input.default, null)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/_react.default.createElement(_Input.default, null)), /*#__PURE__*/_react.default.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/_react.default.createElement(_Input.default, null)));
+  }, /*#__PURE__*/_react.default.createElement(_Input.default, {
+    multiline: true,
+    row: "4"
+  })));
 }
 },{"react":"node_modules/react/index.js","./Input.js":"Input.js","./input_style.scss":"input_style.scss"}],"script.js":[function(require,module,exports) {
 "use strict";

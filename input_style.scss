@@ -6,12 +6,15 @@ $border_radius : 8px;
 $default_boder : 1px solid #828282;
 $base_padding : #F2F2F2;
 $disabled_bg : #F2F2F2;
+$error_boder: 1px solid #D32F2F;
+$border_focus : 1px solid #333333;
+$error_hover : 1px solid #333333;
 
 /*general rules for the inputs*/
-input {
+[type="text"] {
   display: block;
   margin-block: 1rem;
-  padding: 1rem;
+  padding: .7rem;
   border: $default_boder;
   border-radius: $border_radius;
 }
@@ -20,4 +23,71 @@ input {
 .container  {
   display: flex;
   justify-content: safe;
+  flex-wrap: wrap;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/* error style*/
+.error:hover {
+  border: $error_hover;
+}
+
+.error:hover ~ label {
+  color: #828282;
+}
+
+.error {
+  border: $error_boder;
+}
+
+.error:focus,
+.error:active {
+  outline: none;
+  border: $error_boder;
+}
+
+.error:focus ~ label,
+.error:active ~ label {
+  color: $outline-error;
+}
+
+input.error ~ label {
+  color: #D32F2F;
+}
+
+/* input focus*/
+
+input:focus {
+  outline: none;
+  border: solid 1px $outline-focus;
+}
+
+/*full widht input*/
+.fullwidth {
+ width: 80vw; 
+}
+
+/*disabled input*/
+input:disabled {
+  border: none;
+}
+
+/* span has a text error */
+span.error {
+  color : $outline-error;
+  border: none;
+}
+
+span.error:hover {
+  color: #828282;
+}
+
+/*multiline text */
+.multiline.row4 {
+  width: 25vw;
+  height: 25vh;
 }

@@ -1,9 +1,9 @@
 /* variables */
 /*general rules for the inputs*/
-input {
+[type=text] {
   display: block;
   margin-block: 1rem;
-  padding: 1rem;
+  padding: 0.7rem;
   border: 1px solid #828282;
   border-radius: 8px;
 }
@@ -12,6 +12,72 @@ input {
 .container {
   display: flex;
   justify-content: safe;
+  flex-wrap: wrap;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/* error style*/
+.error:hover {
+  border: 1px solid #333333;
+}
+
+.error:hover ~ label {
+  color: #828282;
+}
+
+.error {
+  border: 1px solid #D32F2F;
+}
+
+.error:focus,
+.error:active {
+  outline: none;
+  border: 1px solid #D32F2F;
+}
+
+.error:focus ~ label,
+.error:active ~ label {
+  color: #D32F2F;
+}
+
+input.error ~ label {
+  color: #D32F2F;
+}
+
+/* input focus*/
+input:focus {
+  outline: none;
+  border: solid 1px #2962FF;
+}
+
+/*full widht input*/
+.fullwidth {
+  width: 80vw;
+}
+
+/*disabled input*/
+input:disabled {
+  border: none;
+}
+
+/* span has a text error */
+span.error {
+  color: #D32F2F;
+  border: none;
+}
+
+span.error:hover {
+  color: #828282;
+}
+
+/*multiline text */
+.multiline.row4 {
+  width: 25vw;
+  height: 25vh;
 }
 
 /*# sourceMappingURL=/script.75da7f30.css.map */
