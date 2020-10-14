@@ -4,7 +4,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://adoring-roentgen-0c266f.netlify.app/}">
+    <a href="https://adoring-roentgen-0c266f.netlify.app/">
       Demo
     </a>
     <span> | </span>
