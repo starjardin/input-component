@@ -8,7 +8,7 @@
       Demo
     </a>
     <span> | </span>
-    <a href="https://github.com/starjardin/input-component}">
+    <a href="https://github.com/starjardin/input-component">
       Solution
     </a>
   </h3>
