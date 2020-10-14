@@ -33,7 +33,7 @@
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 ![screenshot](./icons/inputs.png)
 
--   Hello wold, you can see my demo in this <a href="https://github.com/starjardin/input-component">link</a>
+-   Hello wold, you can see my demo in this <a href="https://github.com/starjardin/input-component">solution</a> <a href="https://adoring-roentgen-0c266f.netlify.app/">Demo</a>
 -   I think, it does not alway to set props with dashes/underscores
 -   What have you learned/improved?
 -   Your wisdom? :)
