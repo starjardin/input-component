@@ -28506,12 +28506,7 @@ function App() {
   }, /*#__PURE__*/_react.default.createElement("div", null, "< input fullwidth />", /*#__PURE__*/_react.default.createElement(_Input.default, {
     label: "label",
     fullwidth: "fullwidth"
-  }))), /*#__PURE__*/_react.default.createElement("div", {
-    className: "container"
-  }, /*#__PURE__*/_react.default.createElement("div", null, "<Input multiline row=\"4\"/>", /*#__PURE__*/_react.default.createElement(_Input.default, {
-    multiline: true,
-    row: "4"
-  }))));
+  }))), /*#__PURE__*/_react.default.createElement("div", null, "<Input multiline row=\"4\"/>", /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("textarea", null))));
 }
 },{"react":"node_modules/react/index.js","./Input.js":"Input.js","./input_style.scss":"input_style.scss"}],"script.js":[function(require,module,exports) {
 "use strict";

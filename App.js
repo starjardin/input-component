@@ -150,10 +150,10 @@ export default function App () {
           />
         </div>
       </div>
-      <div className="container">
-        <div>
+      <div>
         {`<Input multiline row="4"/>`}
-        <Input multiline row="4"/>
+        <div>
+          <textarea></textarea>
         </div>
       </div>
     </div>
