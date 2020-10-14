@@ -99,6 +99,7 @@ input:focus ~ * {
 /*full widht input*/
 .fullwidth {
   width: 80vw;
+  max-width: 900px;
 }
 
 /*disabled input*/
