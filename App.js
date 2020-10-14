@@ -6,77 +6,155 @@ export default function App () {
   return (
     <div>
       <div className="container">
-        <Input 
-          label="Label"
-          iconStart="at-symbol"
-        />
-        <Input 
-          label="Label"
-          iconStart="search"
-        />
-        <Input 
-          label="Label"
-          iconStart="server"
-        />
+        <div>
+          {` < input />`}
+          <Input 
+            label="Label"
+          />
+        </div>
+        <div>
+          {` &:hover`}
+          <Input 
+            label="Label"
+          />
+        </div>
+        <div>
+          {`&:active // &:focus`}
+          <Input 
+            label="Label"
+          />
+        </div>
       </div>
       <div className="container">
-        <Input 
-          error
-          label="Label"
-        />
-        <Input 
-          error
-          label="Label"
-        />
-        <Input 
-          error
-          label="Label"
-        />
+        <div>
+        {`< input error />`}
+          <Input 
+            error
+            label="Label"
+          />
+        </div>
+        <div>
+        {` &:hover`}
+          <Input 
+            error
+            label="Label"
+          />
+        </div>
+        <div>
+        {`&:active // &:focus`}
+          <Input 
+            error
+            label="Label"
+          />
+        </div>
       </div>
       <div className="container">
-        <Input disabled/>
+        <div>
+          {`< input disabled />`}
+          <Input disabled/>
+        </div>
       </div>
       <div className="container">
-        {`< input helperText="some interesting text" text="error" />`}
-        <Input 
-          label="Label"
-          helperText="some interesting text"
-          text="text"
-        />
-        {`< input helperText="some interesting text" text="error" />`}
-        <Input 
-          label="Label"
-          helperText="some interesting text"
-          error
-          text="error"
-        />
+        <div>
+          {`< input helperText="some interesting text" text="error" />`}
+          <Input 
+            label="Label"
+            helperText="some interesting text"
+            text="text"
+          />
+        </div>
+        <div>
+          {`< input helperText="some interesting text" text="error" />`}
+          <Input 
+            label="Label"
+            helperText="some interesting text"
+            error
+            text="error"
+          />
+        </div>
       </div>
       <div className="container">
-        <Input 
-        />
-        <Input 
-        />
+        <div>
+
+          {`< input fa-twitter />`}
+          <Input 
+            startIcon="fa-twitter"
+          />
+        </div>
+        <div>
+          {`< input fa-search />`}
+          <Input 
+            startIcon="fa-search"
+          />
+        </div>
+        <div>
+          {`< input fa-key />`}
+          <Input 
+            startIcon="fa-key"
+          />
+        </div>
+        <div>
+          {`< input fa-cog />`}
+          <Input 
+            endIcon="fa-cog"
+          />
+        </div>
+        <div>
+          {`< input fa-trash-o />`}
+          <Input 
+            endIcon="fa-trash-o"
+          />
+        </div>
+        <div>
+          {`< input fa-shopping-cart />`}
+          <Input 
+            endIcon="fa-shopping-cart"
+          />
+        </div>
       </div>
       <div className="container">
-        {`< input value="text" />`}
-        <Input 
-          value="Text"
-          label="Label"
-        />
+        <div>
+          {`< input value="text" />`}
+          <Input 
+            value="Text"
+            label="Label"
+          />
+        </div>
       </div>
       <div className="container">
-        <Input/>
-        <Input/>
+        <div>
+          {`< input size="sm" />`}
+          <Input
+            size="sm"
+          />
+        </div>
+        <div>
+          {`< input size="md" />`}
+          <Input
+            size="md"
+          />
+        </div>
+        <div>
+          {`< input size="lg" />`}
+          <Input
+            size="lg"
+          />
+        </div>
       </div>
       <div className="container">
-        {`< input fullwidth />`}
-        <Input 
-          label="label"
-          fullwidth="fullwidth"
-        />
+        <div>
+          {`< input fullwidth />`}
+          <Input 
+            label="label"
+            fullwidth="fullwidth"
+          />
+        </div>
       </div>
       <div className="container">
+        <div>
+        {`<Input multiline row="4"/>`}
         <Input multiline row="4"/>
+        </div>
       </div>
     </div>
   )

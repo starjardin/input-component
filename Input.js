@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
-import Icon from "./Icons.js"
+import Icons from './Icons';
+// import Icons from "./Icons.js"
 
 function Input (props) {
   let classes;
   let placeholder;
+  let iconClasses;
   if (props.error) {
     classes = `${classes} error`
   }
@@ -13,21 +15,32 @@ function Input (props) {
   if (props.multiline) {
     classes = `${classes} multiline row4`
   }
+  if (props.size) {
+    classes = `${classes} ${props.size}`
+  }
 
   placeholder = props.value ? props.value : "Placeholder", 
   placeholder = props.fullwidth ? "Text" : placeholder;
 
+  if (props.startIcon) {
+    iconClasses = `${iconClasses} ${props.startIcon} left`
+  }
+  if (props.endIcon) {
+    iconClasses = `${iconClasses} ${props.endIcon} right`
+  }
+
   return (
     <div className="wrapper">
-      <span className={props.text && props.text}>
-        {props.helperText && props.helperText}
-      </span>
+      <i className={`fa ${iconClasses}`}></i>
       <input 
         type= "text"
         className={classes}
         placeholder={placeholder}
         disabled={props.disabled}
       />
+      <span>
+        {props.helperText && props.helperText}
+      </span>
       <label htmlFor={props.label}>{props.label}</label>
     </div>
   )

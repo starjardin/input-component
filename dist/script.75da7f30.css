@@ -1,4 +1,9 @@
 /* variables */
+body {
+  margin: auto;
+  max-width: 900px;
+}
+
 /*general rules for the inputs*/
 [type=text] {
   display: block;
@@ -8,16 +13,47 @@
   border-radius: 8px;
 }
 
+[type=text]:hover {
+  border: 1px solid #333333;
+}
+
+[type=text]:disabled {
+  pointer-events: none;
+}
+
+[type=text]:hover ~ label {
+  color: 1px solid #333333;
+}
+
 /*layouts of the inputs*/
 .container {
   display: flex;
-  justify-content: safe;
+  justify-content: space-between;
   flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 2rem;
 }
 
+label {
+  margin-block-start: 1rem;
+}
+
+/* reverse the order text */
 .wrapper {
   display: flex;
   flex-direction: column-reverse;
+}
+
+span {
+  order: 1;
+}
+
+label {
+  order: 3;
+}
+
+input {
+  order: 3;
 }
 
 /* error style*/
@@ -25,7 +61,7 @@
   border: 1px solid #333333;
 }
 
-.error:hover ~ label {
+.error:hover ~ * {
   color: #828282;
 }
 
@@ -39,19 +75,25 @@
   border: 1px solid #D32F2F;
 }
 
-.error:focus ~ label,
-.error:active ~ label {
+.error:focus ~ *,
+.error:active ~ * {
   color: #D32F2F;
 }
 
-input.error ~ label {
+input.error ~ * {
   color: #D32F2F;
 }
 
 /* input focus*/
+input:active,
 input:focus {
   outline: none;
   border: solid 1px #2962FF;
+}
+
+input:active ~ *,
+input:focus ~ * {
+  color: #2962FF;
 }
 
 /*full widht input*/
@@ -64,20 +106,53 @@ input:disabled {
   border: none;
 }
 
-/* span has a text error */
-span.error {
-  color: #D32F2F;
-  border: none;
-}
-
-span.error:hover {
-  color: #828282;
-}
-
 /*multiline text */
 .multiline.row4 {
   width: 25vw;
   height: 25vh;
+}
+
+/*********** Icons style ****************/
+.wrapper {
+  position: relative;
+}
+
+.fa {
+  display: block;
+  position: absolute;
+  bottom: 25%;
+  transform: translateY(-50%);
+}
+
+.fa.left ~ [type=text] {
+  padding-left: 3rem;
+}
+
+.fa.right ~ [type=text] {
+  padding-right: 3rem;
+}
+
+.fa.left {
+  margin-inline-start: 1rem;
+  left: 0;
+}
+
+.fa.right {
+  right: 0;
+  margin-inline-end: 1rem;
+}
+
+/* Input size*/
+.sm {
+  padding: 1rem;
+}
+
+.md {
+  padding: 1.5rem;
+}
+
+.lg {
+  padding: 2rem;
 }
 
 /*# sourceMappingURL=/script.75da7f30.css.map */
