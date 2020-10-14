@@ -34,8 +34,8 @@ Introduce your projects by taking a screenshot or a gif. Try to tell visitors a 
 ![screenshot](./icons/inputs.png)
 
 -   Hello wold, you can see my demo in this <a href="https://github.com/starjardin/input-component">solution</a> <a href="https://adoring-roentgen-0c266f.netlify.app/">Demo</a>
--   I think, it does not alway to set props with dashes/underscores
--   What have you learned/improved?
+-   I think, it does not alway to set props in the app with dashes/underscores
+-   I learned something indeed, such as setting an inside an input you need to add this link <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> to your html and use fa- as a prefix of your icons, loads of things I think I still need to work on such as passing the props to another file is still a little bit blury but with practice I think it will be fine
 -   Your wisdom? :)
 
 ### Built With
