@@ -77,37 +77,43 @@ export default function App () {
         <div>
 
           {`< input fa-twitter />`}
-          <Input 
+          <Input
+            label="label" 
             startIcon="fa-twitter"
           />
         </div>
         <div>
           {`< input fa-search />`}
-          <Input 
+          <Input
+            label="label" 
             startIcon="fa-search"
           />
         </div>
         <div>
           {`< input fa-key />`}
-          <Input 
+          <Input
+            label="label" 
             startIcon="fa-key"
           />
         </div>
         <div>
           {`< input fa-cog />`}
-          <Input 
+          <Input
+            label="label" 
             endIcon="fa-cog"
           />
         </div>
         <div>
           {`< input fa-trash-o />`}
-          <Input 
+          <Input
+            label="label" 
             endIcon="fa-trash-o"
           />
         </div>
         <div>
           {`< input fa-shopping-cart />`}
-          <Input 
+          <Input
+            label="label" 
             endIcon="fa-shopping-cart"
           />
         </div>

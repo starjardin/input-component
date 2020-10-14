@@ -120,7 +120,7 @@ input:disabled {
 .fa {
   display: block;
   position: absolute;
-  bottom: 25%;
+  bottom: 20%;
   transform: translateY(-50%);
 }
 

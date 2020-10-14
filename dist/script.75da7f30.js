@@ -28477,16 +28477,22 @@ function App() {
   }))), /*#__PURE__*/_react.default.createElement("div", {
     className: "container"
   }, /*#__PURE__*/_react.default.createElement("div", null, "< input fa-twitter />", /*#__PURE__*/_react.default.createElement(_Input.default, {
+    label: "label",
     startIcon: "fa-twitter"
   })), /*#__PURE__*/_react.default.createElement("div", null, "< input fa-search />", /*#__PURE__*/_react.default.createElement(_Input.default, {
+    label: "label",
     startIcon: "fa-search"
   })), /*#__PURE__*/_react.default.createElement("div", null, "< input fa-key />", /*#__PURE__*/_react.default.createElement(_Input.default, {
+    label: "label",
     startIcon: "fa-key"
   })), /*#__PURE__*/_react.default.createElement("div", null, "< input fa-cog />", /*#__PURE__*/_react.default.createElement(_Input.default, {
+    label: "label",
     endIcon: "fa-cog"
   })), /*#__PURE__*/_react.default.createElement("div", null, "< input fa-trash-o />", /*#__PURE__*/_react.default.createElement(_Input.default, {
+    label: "label",
     endIcon: "fa-trash-o"
   })), /*#__PURE__*/_react.default.createElement("div", null, "< input fa-shopping-cart />", /*#__PURE__*/_react.default.createElement(_Input.default, {
+    label: "label",
     endIcon: "fa-shopping-cart"
   }))), /*#__PURE__*/_react.default.createElement("div", {
     className: "container"

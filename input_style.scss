@@ -92,7 +92,7 @@ input {
 }
 
 input.error ~ * {
-  color: #D32F2F;
+  color: $outline-error;
 }
 
 /* input focus*/
@@ -132,7 +132,7 @@ input:disabled {
 .fa {
   display: block;
   position: absolute;
-  bottom: 25%;
+  bottom: 20%;
   transform: translateY(-50%);
 }
 
